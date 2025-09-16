@@ -1,0 +1,72 @@
+.hero-container{
+    height: 100vh;
+    background-image: url('../assets/pexels-scottwebb-136404.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text{
+    padding-top: 10%;
+    width: 50%;
+    font-family: 'Teko', sans-serif;
+    margin-left: 5vw;
+    animation: transText 2s ease-in-out;
+}
+@keyframes transText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+     }
+}
+.hero-text::after{
+    transform: translateX(120%);
+}
+
+.hero-text span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.hero-text span .hero-line{
+    height: 2px;
+    width: 50px;
+    background-color: #0096c7;
+}
+
+.hero-text span h5{
+    font-size: 2rem;
+    margin: 0;
+    color: #0096c7;
+    font-weight: 400;
+}
+
+.hero-text h2{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.hero-text h2 b{
+    color: #00b4d8;
+}
+
+.hero-text button{
+    padding: 15px 30px;
+    background-color: #0096c7;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
